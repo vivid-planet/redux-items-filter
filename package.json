@@ -1,0 +1,44 @@
+{
+  "name": "@vivid-planet/redux-items-filter",
+  "version": "1.0.0",
+  "license": "BSD-2-Clause",
+  "description": "A collection of React Higher-Order Components and Redux reducers to build item filters with a common interface.",
+  "author": "Simon Radner <sr@vivid-planet.com>",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^15.5",
+    "prop-types": "^15.5",
+    "redux": "^3.0.0",
+    "react-redux": "^5.0.1",
+    "redux-act": "^1.1.0"
+  },
+  "optionalDependencies": {
+    "redux-act-async": "^1.7.0",
+    "redux-form": "^6.4.3",
+    "react-router-redux": "^4.0.8",
+    "query-string": "^5.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "eslint": "^3.19.0",
+    "babel-eslint": "^7.2.3",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-react": "^7.0.1",
+    "webpack": "^2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/vivid-planet/redux-items-filter/issues"
+  },
+  "homepage": "https://github.com/vivid-planet/redux-items-filter#readme"
+}
