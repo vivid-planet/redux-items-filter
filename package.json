@@ -8,8 +8,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
-    "build": "webpack",
-    "prepublish": "npm run build"
+    "build": "npx babel-cli src  --out-dir build",
+    "build-webpack": "webpack",
+    "clean": "rm -rf build",
+    "prepublish": "npm run clean && npm run build"
   },
   "peerDependencies": {
     "react": "^15.5",
@@ -27,12 +29,12 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1",
     "eslint": "^3.19.0",
-    "babel-eslint": "^7.2.3",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-react": "^7.0.1",
     "webpack": "^2.6.1"
